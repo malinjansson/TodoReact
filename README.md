@@ -5,6 +5,7 @@ A todo-list application built with [Vite](https://vite.dev/) and [React](https:/
 * Add todo 
 * Remove todo
 * Mark as done/undone
+* Sort todos
 
 ## DEMO
 ### 1. Empty list 
