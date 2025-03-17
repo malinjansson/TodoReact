@@ -1,0 +1,37 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.form-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+
+    @include m.forSize(desktop) {
+        justify-content: center;
+        width: 50%;
+      }
+
+    form {
+        display: flex;
+        flex-direction: column; 
+          
+          input {
+            font-family: v.$primary-font-family;
+            font-family: 14px;
+            border-style: none;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid v.$primary-color;
+          } input::placeholder {
+            text-transform: capitalize;
+          }
+
+          button {
+            @include m.form-button-style;
+            margin-top: 10px;
+          }
+    }
+}

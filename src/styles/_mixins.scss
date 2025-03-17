@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+@mixin forSize($size) {
+  @if $size == desktop {
+    @media screen and (min-width: v.$desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin form-button-style {
+    background-color: #912235;
+    color: v.$secondary-color;
+    font-family: v.$primary-font-family;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}

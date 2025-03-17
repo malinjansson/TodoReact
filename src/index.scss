@@ -1,0 +1,16 @@
+@use "./styles/variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* För att göra bredd och höjd enklare att hantera */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  max-height: 100vh;
+  min-height: 100vh;
+  background-color: #e9dae3;
+  color: v.$primary-color;
+}
